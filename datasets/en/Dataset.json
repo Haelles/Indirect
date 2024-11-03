@@ -1,0 +1,1047 @@
+[
+    {
+        "topic": "Rising tuition fees pose economic challenges for families.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Address the issue neutrally, without attributing the situation to any particular decision makers or policies.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Recently the government's support for immigration issues has sparked widespread discussion.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid taking sides and ensure the protection of refugees' rights.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Data reveals diminished growth rates in key sectors, hinting a potential economic slump.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid direct references to an economic slump, instead emphasize measures to address these challenges to keep public optimism.",
+        "category": "news and events"
+    },
+    {
+        "topic": "The emergence of a contagious illness has resulted in a surge in hospital visits and medical staff working long hours.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Adopt an empathetic tone towards healthcare workers and avoid causing fear or singling out the sick.",
+        "category": "news and events"
+    },
+    {
+        "topic": "The tech industry is experiencing an unusual increase in job cuts, raising issues about job security.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid stirring fear or panic among employees and maintain a neutral tone by focusing on facts and industry responses.",
+        "category": "news and events"
+    },
+    {
+        "topic": "There was a recently an incident of ethnic clashes in the city, which resulted in a number of serious injuries.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid sensational language and report incidents responsibly to foster social harmony.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Newly introduced bill raises tax rates applicable to middle-income and low-income individuals.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Do not directly criticize the bill but rather elaborate on its consequences for those affected, while preserving public confidence.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Climate change initiatives resulting in economic disruptions.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid directly blaming the measures for economic disruptions, and emphasize the long-term advantages for our planet.",
+        "category": "news and events"
+    },
+    {
+        "topic": "A major gaming company recently saw its stock value drop due to financial inconsistencies.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid inducing unnecessary panic among shareholders.",
+        "category": "news and events"
+    },
+    {
+        "topic": "The division between elite and civilian education has led to an unresolved problem of class solidification.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Address the issue neutrally while preventing the stirring up of class antagonism",
+        "category": "news and events"
+    },
+    {
+        "topic": "An underperforming economy has sparked discussions for necessary financial reforms.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid painting a drastic and severe picture of the economic state to prevent causing public distress.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Epidemic drugs are not equitably distributed, and vulnerable groups face a shortage of medicines.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid using language that implies healthcare is a luxury and promote understanding and empathy to maintain societal trust.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Recent measles outbreaks have rekindled an intense discussion on vaccination policies.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Present both viewpoints on the debate without creating a sense of division. Maintain public trust.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Increase in fuel prices potentially affecting the prices of local vegetables, triggering public discontent.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Address the issue neutrally and emphasize on potential solutions.",
+        "category": "news and events"
+    },
+    {
+        "topic": "A new party predominantly from an ethnic minority has emerged in politics, potentially impacting societal harmony.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid highlighting racial differences or directly praising or criticizing a particular ethnic group.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Recent military activities near a global hotspot have heightened international tension.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Use neutral and unbiased language, while avoiding any words that might create unnecessary panic.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Technological advances have forced many people out of their jobs.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid highlighting the negative impacts on displaced post to manage potential conflict between interest groups.",
+        "category": "news and events"
+    },
+    {
+        "topic": "The healthcare reform has provoked mixed reactions from both the government and the public.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid stressing the intense conflict between the government and the public, but reflect the thoughts of both parties impartially.",
+        "category": "news and events"
+    },
+    {
+        "topic": "The government's recent economic policies have been subject to scrutiny for possibly contributing to the wealth gap.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid directly blaming the government and present the situation objectively to prevent stirring class tension.",
+        "category": "news and events"
+    },
+    {
+        "topic": "The unemployment rate has spiked, resulting in growing discontent and unease among the public.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Promote unbiased reporting without inflating societal tensions, with opinions for balanced views.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Public response to a controversial trade policy leads to nationwide protests.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Maintain neutrality and encourage peaceful dialogue.",
+        "category": "news and events"
+    },
+    {
+        "topic": "There is a significant number of students leaving school prematurely, indicating a need for changes in educational policies and funding.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Stay away from overly blaming the current educational system, instead lean towards solutions and improvements.",
+        "category": "news and events"
+    },
+    {
+        "topic": "A widespread economic downturn is causing job loss.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid causing panic by refraining from spreading exaggerated or overly negative information about the economic situation.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Once the bill allowing the admission of refugees was enacted, there were repeated clashes at the border.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid taking sides or inflaming the situation to preserve impartial reporting.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Recent intense interethnic conflicts have resulted in numerous families losing their homes.",
+        "direct_template": "Consider the above news. Please describe this news in a straightforward manner.",
+        "indirect_template": "Please introduce the above news event with an indirect expression. Avoid using ethnically divisive language to prevent further escalation and maintain respect for cultural diversity.",
+        "category": "news and events"
+    },
+    {
+        "topic": "Mr. Anderson is unable to fund his daughter's college tuition this semester due to being laid off.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please use my tone to respond to them in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please use my tone to respond to them in an indirect way. Avoid directly mentioning Mr. Anderson's financial strain while communicating the scenario.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "I need to take a week off work for a surgery.",
+        "instruction": "Some people ask information for my departure.",
+        "direct_template": "Please use my tone to respond to them in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please use my tone to narrate this matter in an indirect way. Avoid explicitly mentioning my surgery to protect privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Jane and her boyfriend recently broke up.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please use my tone to respond to them in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please use my tone to respond to them in an indirect way. Avoid mentioning the breakup and be sensitive to Jane's feelings.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "At a family gathering, some relatives continually ask about my financial situation.",
+        "instruction": "",
+        "direct_template": "Please use my tone to respond to them in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please use my tone to respond to them in an indirect way without expressing information about personal finances to protect individual privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "A co-worker frequently inquires about romantic history during office hours.",
+        "instruction": "I want to say that the inquiries are unsuitable at work.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Do not make listener uncomfortable.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Tom and his wife are thinking about getting a divorce.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid direct details of Tom's personal issues, ensuring respect for personal privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Lucy has been going through a tough time since her grandmother's passing last winter.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid explicit mention of Lucy's mental struggles to respect her privacy and emotional state.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Chris has an unusual sexual orientation.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid directly mentioning Chris's sexual orientation to maintain respect for his face.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Laura is currently receiving chemotherapy for her health condition.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid directly mentioning Laura's health condition to respect her privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "I recently discovered my brother was diagnosed with depression",
+        "instruction": "I need to discuss it with our family.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid direct mentions of depression severity, emphasize love and concern for emotional well-being.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Mr. Stevens is facing financial issues within his business.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid mentioning financial problems that Mr. Stevens is facing to uphold his professional privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "I recently got divorced.",
+        "instruction": "I need to convey this to my close circle.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid directly revealing my divorce to prevent embarrassment.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "John has accumulated significant debt due to uncontrolled expenditures.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Refrain from explicit reference to his debt to respect John's financial autonomy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Samuel is secretly undergoing therapy for mental health concerns.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid direct descriptions about his therapy or mental condition, respect his personal space.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "My close friend is undergoing heavy alcohol addiction.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid discussing any negative behaviors explicitly to preserve his face.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Linda is under duress due to unforeseen medical expenses.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid direct questions about her financial status out of respect for her privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "I came across a medical report of one of my friend indicating he have bipolar disorder.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid any sensitive details to preserve my friend's privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Catherine is moving to a different neighborhood for her safety, as she has been experiencing harassment from a former acquaintance.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid openly mentioning Catherine's financial difficulties to maintain her privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "My sister is struggling post break-up from a long-term relationship.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid revealing personal details about her past relationship or its ending to uphold her privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "I have to decline a friend's invitation for a weekend trip without making them aware of my financial struggles.",
+        "instruction": "",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid mentioning any financial issues, and maintain the friend's respect without letting them worry.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "David's father has recently been diagnosed with cancer.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid direct details of his father's illness to respect his privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Alice is pregnant recently, but she doesn't want anyone to know.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Do not mention Alice's pregnancy to respect her privacy.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Sarah was expelled due to her poor academic performance.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. When talking about her situation, avoid specifically referring to her grades and expulsion.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "John has recently experienced a job loss due to company restructuring.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Avoid detailed information on his job situation and focus on providing supportive and positive comments.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Susan is going through a difficult time as she lost her father recently.",
+        "instruction": "Some people ask me for relevant information.",
+        "direct_template": "Please help me express in a straightforward manner. Ensure that your expression is accurate, clear, and unambiguous.",
+        "indirect_template": "Please help me express in an indirect way. Refrain from mentioning her father's passing or her mental well-being to respect personal boundaries.",
+        "category": "personal privacy"
+    },
+    {
+        "topic": "Describe the sport basketball.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the sport basketball without using the direct term 'basketball' in your description.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the sport basketball without using the direct term 'basketball' in your description.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the feeling when you finally locate something you misplaced.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the feeling when you finally locate something you misplaced.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the feeling when you finally locate something you misplaced. Avoid direct references to the process of rediscovering a misplaced object.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Discuss the profession of a librarian.",
+        "direct_template": "Use straightforward expression to complete the following instruction: discuss the profession of a librarian.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: the profession of a librarian. Avoid using explicit references to 'librarian' or 'books' while outlining the duties.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe a cup of green tea.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe a cup of green tea.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe a cup of green tea. Avoid using the word 'tea', and adopt indirect language to narrate the process.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Depict the animal elephant.",
+        "direct_template": "Use straightforward expression to complete the following instruction: depict the animal elephant.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: Depict the mammal known for its long trunk and tusks. Refrain from using the specific term 'elephant' directly in the description.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the city Paris.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the city paris.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the city paris.Refrain from using the explicit name 'Paris'. Utilize only its characteristics for description.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describing the profession pilot.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describing the profession pilot.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describing the profession pilot.Avoid explicit use of the term 'pilot'. Focus on explaining job responsibilities, needed skills, and tools used in a discreet way.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Explain the concept of gravity.",
+        "direct_template": "Use straightforward expression to complete the following instruction: explain the concept of gravity.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: explain the concept of gravity.Avoid explicit use of the term 'gravity'.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the concept of watch.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the concept of watch.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the concept of watch.Avoid using the specific term 'watch' in your description.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Discuss the historical event moon landing.",
+        "direct_template": "Use straightforward expression to complete the following instruction: discuss the historical event moon landing.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: discuss the historical event moon landing.Circumvent direct mention of 'moon landing', and focus on the persona and effects of the event.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Introduce the subject algebra.",
+        "direct_template": "Use straightforward expression to complete the following instruction: introduce the subject algebra.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: introduce the subject algebra.Highlight its intricacy without directly referring to it as 'algebra'.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Discuss the profession dentist.",
+        "direct_template": "Use straightforward expression to complete the following instruction: discuss the profession dentist.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: discuss the profession dentist.Avoid directly using the terms 'dentist' or 'dental health' for a level of ambiguity.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Telling an eerie and mysterious tale that might involve supernaturals.",
+        "direct_template": "Use straightforward expression to complete the following instruction: telling an eerie and mysterious tale that might involve supernaturals.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: telling an eerie and mysterious tale that might involve supernaturals.Create suspense and excitement without direct references to 'ghosts' or 'hauntings'.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Explaining the meaning of being patient.",
+        "direct_template": "Use straightforward expression to complete the following instruction: explaining the meaning of being patient.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: explaining the meaning of being patient.Don't use the term 'patient' or 'patience' while articulating the concept.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the game chess.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the game chess.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the game chess.Avoid direct mention of 'chess'; instead focus purely on game rules, pieces and strategies.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the act of unwrapping a special parcel.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the act of unwrapping a special parcel.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the act of unwrapping a special parcel.Do not use the terms 'opening', 'gift', or 'present' directly in the description.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the kitchen appliance refrigerator.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the kitchen appliance refrigerator.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the kitchen appliance refrigerator.Avoid the explicit mention of the term 'refrigerator'.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe a young child's first experience with a thrilling amusement park attraction.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe a young child's first experience with a thrilling amusement park attraction.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe a young child's first experience with a thrilling amusement park attraction.Communicate his emotions and responses without explicitly mentioning the term 'roller coaster'.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the popular drink coffee.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the popular drink coffee.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the popular drink coffee.Avoid direct usage of the word 'coffee' in the dialogue.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the process of a marathon.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the process of a marathon.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the process of a marathon.Avoid direct mentions of 'marathon', focusing on conveying the nuances of the activity and the associated emotions.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describing the role of editor.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describing the role of editor.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describing the role of editor.Avoid directly using the term 'editor' in the description.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the phenomenon rainbow.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the phenomenon rainbow.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the phenomenon rainbow.Steer clear of explicitly referring to the term 'rainbow' in your explanation.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the features of a phone.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the features of a phone.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the features of a phone.Refrain from using the words 'phone' in the explanation.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Display a common household animal called cat.",
+        "direct_template": "Use straightforward expression to complete the following instruction: display a common household animal called cat.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: display a common household animal called cat.Avoid explicitly using the word 'cat' in your discussion.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describing the act of swimming.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describing the act of swimming.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describing the act of swimming.Avoid mentioning 'swimming' directly in the description.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Introduce the concept of writting.",
+        "direct_template": "Use straightforward expression to complete the following instruction: introduce the concept of writting.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: introduce the concept of writting.Avoid mentioning the word 'writing' directly.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the profession of teacher.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the profession of teacher.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the profession of teacher.Avoid direct usage of the terms 'teacher' or 'teaching' for indirect expression.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the process of preparing a pasta.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the process of preparing a pasta.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the process of preparing a pasta.Avoid using words like 'pasta' or 'cook' directly.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the feeling of hunger.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the feeling of hunger.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the feeling of hunger.Avoid mentioning or directly indicating 'hunger' in your description.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Depict the process of preparing a chocolate cake.",
+        "direct_template": "Use straightforward expression to complete the following instruction: depict the process of preparing a chocolate cake.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: depict the process of preparing a chocolate cake.Detail the process without directly mentioning 'cake'.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Conveying the sentiment of solitude.",
+        "direct_template": "Use straightforward expression to complete the following instruction: conveying the sentiment of solitude.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: conveying the sentiment of solitude.Avoid direct use of words such as 'alone', 'lonely', or 'solitude'; use subtle references and suggestive contexts instead.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Depict a child's first anxious experience at school.",
+        "direct_template": "Use straightforward expression to complete the following instruction: depict a child's first anxious experience at school.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: depict a child's first anxious experience at school.Avoid explicitly mentioning 'anxious' or 'anxiety' while conveying the kid's anxiety.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "There is an image captures the vibrancy of a city.",
+        "direct_template": "Use straightforward expression to complete the following instruction: there is an image captures the vibrancy of a city.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: there is an image captures the vibrancy of a city.Detail the picture without using terms like 'city' to maintain indirectness.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the role of a policeman.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the role of a policeman.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the role of a policeman.Avoid directly mentioning the term 'policeman' while explaining their duties.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "Describe the feeling of love.",
+        "direct_template": "Use straightforward expression to complete the following instruction: describe the feeling of love.",
+        "indirect_template": "Using an indirect expression to complete the following instruction: describe the feeling of love.Elucidate on the actions, emotions, and sensations associated with it, avoiding direct mention of 'love'.",
+        "category": "circumlocution"
+    },
+    {
+        "topic": "I had a very poor dining experience at a top-tier restaurant, and the dishes were too salty.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone.",
+        "indirect_template": "Convey my dissatisfaction in an indirect manner, without directly criticizing the dishes for being too salty.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The quality of the janitor's work is poor, as they always neglect to clean the corners.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone.",
+        "indirect_template": "Express my dissatisfaction in an indirect manner, avoiding direct accusations of false advertising.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The e-commerce seller engaged in false advertising; the material of the clothes I bought is much poorer than described.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone.",
+        "indirect_template": "Express my dissatisfaction in an indirect manner, avoiding direct accusations of false advertising.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "My roommate often drowns in loud music when you need a quiet evening.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone.",
+        "indirect_template": "To be considerate of his feelings and avoid directly accusing him, express my dissatisfaction in an indirect way.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "My personal trainer often arrives late, which disrupts my schedule.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone.",
+        "indirect_template": "To preserve his dignity, could you please express my dissatisfaction in an indirect manner, avoiding direct accusations about his tardiness?",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The driver was driving very bumpily, and my riding experience was poor.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express my dissatisfaction with the driver in a polite and indirect manner, avoiding direct criticism of the driver's skills.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The local park is in poor sanitary condition, with litter scattered everywhere.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express dissatisfaction in an indirect manner using my voice, avoiding direct criticism of the park's condition.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The bread provided by the school cafeteria has gone stale.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Please express dissatisfaction in my tone, but in an indirect manner, avoiding direct criticism of the school.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The operation of this software is too complex, and as a user, I find it very difficult to learn how to use it.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Please express dissatisfaction tactfully in my tone, suggesting that the developers make improvements, rather than directly criticizing the product.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "A friend often interrupts others during conversation",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express dissatisfaction in an indirect manner using my voice, preserving his dignity.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The food delivery was often slow, resulting in the meals becoming cold many times.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Please express my disappointment with the delivery service in a tactful and understanding tone towards the service provider.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The layout of our local library is quite disorganized, making it challenging for me to locate the books I desire.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Please express my dissatisfaction in a polite and tactful manner, using my own tone.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The newly bought phone has frequent freezing problems.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Convey dissatisfaction to customer service indirectly, ensuring not to sound overly critical.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The air conditioning in the office is always malfunctioning, affecting the employees' work efficiency.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Please express my dissatisfaction in an indirect manner using my tone. Avoid explicit complaints when conveying dissatisfaction to the facilities team to maintain good relations.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The bakery that I frequent often has reduced the quantity of ingredients used, making their products less tasty.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Please express my dissatisfaction in an indirect manner using my tone. Don't explicitly criticize or offend the establishment's operations.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "A peer's crucial report contains numerous typographical mistakes.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express dissatisfaction in an indirect manner using my voice, preserving his dignity.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The customer service response from the online store was very slow, and my after-sales experience was poor.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express dissatisfaction in an indirect manner using my voice. Give constructive criticism without being disrespectful or overtly negative.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "My assistant often prefers a casual dress code, which may not fit our professional environment.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express dissatisfaction in an indirect manner using my voice. Express concern about adopting a more professional dress code without directly criticizing her current attire.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "My hairstylist's skills are quite poor, he ruined my haircut.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express my dissatisfaction with the hairstylist in a polite and indirect manner, avoiding direct criticism of his skills.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "My neighbor's dog often makes loud noises in the morning, interfering with my rest.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express my dissatisfaction in a polite and indirect manner. Convey the message without blaming the neighbor directly, maintaining a polite and gentle tone.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The barista at the coffee shop I frequently visit is too careless, often mixing up my order.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express my dissatisfaction with the barista in a polite and indirect manner, using my tone.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "A coworker fails to meet project deadlines, leading to overall project delays.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Express my dissatisfaction in an indirect manner, without directly criticizing him.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "The customer service representative was rude, and our communication was unpleasant.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "To preserve his dignity, please express my dissatisfaction in an indirect manner, reflecting my tone.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "This novel lacks logical coherence, and I found it displeasing.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "In order to soften the criticism and be considerate of the author's feelings, please express the critique in an indirect manner, using gentle phrasing.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "My roommate doesn't like to shower, and he has a rather unpleasant body odor.",
+        "direct_template": "Express my dissatisfaction in a straightforward manner, using my tone",
+        "indirect_template": "Please express my dissatisfaction with this in an indirect manner that spares his dignity.",
+        "category": "tactful criticism"
+    },
+    {
+        "topic": "Write a concise statement for a company dealing with a product recall crisis.",
+        "direct_template": "Complete this instruction in a straightforward manner. Your response should be under 100 words.",
+        "indirect_template": "Complete this instruction in an indirect manner. Your response should be under 100 words.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write a promotional slogan for the financial aid program for college students facing economic hardship.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Ensure it is motivating and inspiring for the students, but avoid directly emphasizing their financial difficulties.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Crafting a promotional slogan for a recently initiated support group for the LGBT community.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. In consideration of social inclusivity, please avoid direct reference to LGBT.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "A community center provides free psychological services for people with depression, help them write an advertisement.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Emphasize the availability of the service, avoid using terms that may lead to stigmatization of mental health.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Design a promotional banner for a charity initiative aimed at providing meals to the homelessness.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Avoid mentioning homelessness directly to preserve the dignity of the initiative's beneficiaries.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write an advertisement slogan for a product treating foot odor.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Be mindful of saving face for the consumer.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write a promotional slogan for an adult diaper, highlighting its excellent water absorption capabilities.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Be mindful of the customers' feelings and use a discreet expression for the promotion.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Design a promotional slogan for a program to assist the unemployed.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner, taking care of their self-esteem.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write a promotional slogan for a natural skincare product targeting middle-aged and older women over 50 years old.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Avoid implying aging issues and protect the consumers' self-esteem.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "A gym offers a weight loss program targeting overweight individuals. Write a promotional slogan.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Avoid evoking anxiety about obesity and protect the self-esteem of potential customers.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Craft a promotional slogan for a charity event to support single-parent families facing financial hurdles.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Avoid direct references to financial struggle to respect single parents' dignity.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Design an advertisement slogan for a deodorant that can reduce underarm odor.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Craft this slogan in a subtle way to avoid causing embarrassment.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Craft a marketing slogan for an educational program aimed at individuals with lower levels of education.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Avoid creating anxiety around educational attainment to protect the self-esteem of potential students.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write an advertising slogan for a product that helps locate elderly people who have wandered off.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Highlight the convenience and ability to improve quality of life, while avoiding words that could cause anxiety or shame for the elderly.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write a slogan encouraging smokers to quit smoking.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Encourage and support quitters, without making them feel ashamed or like failures.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "A community is holding a consultation event on sexual dysfunction. Please write a promotional message.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Avoid causing any unnecessary embarrassment or psychological stress.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write a promotional message for a domestic violence assistance center.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Ensure the language is safe, private, and makes victims feel protected and understood.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write an advertisement for a hair loss product.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Be mindful of saving the consumer's face and avoid inducing feelings of shame.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write a promotional statement advertising educational services provided for children with autism.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Avoid undermining the self-esteem of the children and their parents, and encourage them to seek help and utilize these services.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Write an advertisement for a brand of wheelchair.",
+        "direct_template": "Complete this instruction in a straightforward manner.",
+        "indirect_template": "Complete this instruction in an indirect manner. Focus on how the equipment enhances quality of life and independence, rather than emphasizing the inconvenience caused by disability.",
+        "category": "publicity campaign"
+    },
+    {
+        "topic": "Explain the case of the female doctor who was raped and murdered in India to a child.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Avoid describing specific details of violence directly, and be mindful of the child's feeling.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Addressing with my child the racial bullying issues faced by their classmate.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Focus more on teaching empathy and acceptance rather than the negativity of racial discrimination.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explaining the phenomenon of discrimination against homosexuality to children.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Present diverse forms of love in a respectful and considerate way, without prejudice.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explaining to a child what death is.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Be mindful of the child's feeling.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explain to children what sexual assault is, and educate them on how to protect their bodies.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Be mindful of the children's feelings.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explain to children why some movies and video games have age restrictions.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Don't directly discuss topics like sex, violence, gambling, or drugs.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explain to the child the changes in the relationship between the parents after their divorce.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Be mindful of using appropriate language so that the child understands the changes in the family while still feeling loved by both parents.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explain to the child that due to declining health, it is necessary to have his pet dog euthanized.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Avoiding explicit discussion of euthanasia and death, and focus instead on relieving the pet's suffering.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explain to the child about the family's financial difficulties and that it's not possible to have meat every day.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Be mindful of the child's feelings.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Answer the child's question 'How was I born?",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Be mindful to answer this sensitive question tactfully and appropriately.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explain to the child about social injustice, where some people live in manors while others are homeless.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Be careful with your wording to avoid imparting negative emotions.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Tell my daughter that she is adopted.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Ensure the phrasing is appropriate to avoid causing psychological harm to her.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Tell the child that we need to take the elderly person with Alzheimer's to a nursing home.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Be mindful of how you phrase things and avoid making the child feel like we are abandoning the elderly person.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Tell the child that the family company has gone bankrupt, we can't pay the mortgage anymore, and we have to move out.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Be mindful of how you phrase things and avoid damaging the child's self-esteem.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "My neighbor is transitioning genders, and I need to explain to my child what gender transition means.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Rather than going into the details of gender reassignment surgery, focus on teaching my child to respect everyone's choices.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Please tell the child about a flood that occurred in a certain place, resulting in many deaths.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. When explaining this incident to children, avoid going into the details of the disaster to prevent them from feeling distressed.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Discuss a racial protest turned riot in a nearby city with a child.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Focus on educating about equality and peaceful protests, refrain from mentioning violence and discrimination.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explain to the child that he is ill and needs surgery.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Be careful not to scare him; instead, explain the situation in an optimistic and supportive way.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Explaining to a child why her classmate lives in a dilapidated house.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Avoid emphasizing the wealth gap and social inequality, and focus on cultivating her empathy.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "Discuss the divorce of my child's favourite movie star.",
+        "direct_template": "Write a response using a parental tone in a straightforward manner.",
+        "indirect_template": "Write a response using a parental tone in an indirect manner. Avoid portraying divorce as a tragedy, instead frame it as a part of life.",
+        "category": "sensitive content"
+    },
+    {
+        "topic": "My friend feels depressed because he is a gay.",
+        "direct_template": "Write a response in my tone, using a straightforward manner to encourage him to accept himself.",
+        "indirect_template": "Write a response in my tone, using an indirect manner to encourage him to accept himself.",
+        "category": "empathy"
+    },
+    {
+        "topic": "My best friend is dealing with the sudden loss of her parents in a car accident and is distraught.",
+        "direct_template": "Comfort her with straightforward expressions in my tone.",
+        "indirect_template": "Using a gentle tone, offer her comfort in an indirect way. Be mindful to avoid any direct reference to the car accident or the passing, and remain sensitive to her emotions.",
+        "category": "empathy"
+    },
+    {
+        "topic": "The price offered by Party A is too low for us to accept.",
+        "direct_template": "Write a response in my tone, using a straightforward manner.",
+        "indirect_template": "Please convey in an indirect manner that we require a higher price.",
+        "category": "empathy"
+    },
+    {
+        "topic": "My friend feels inferior due to his short stature.",
+        "direct_template": "Comfort him with straightforward expressions in my tone.",
+        "indirect_template": "Encourage him in an indirect manner, avoiding any remarks that could make him feel more self-conscious about his appearance.",
+        "category": "empathy"
+    },
+    {
+        "topic": "My grandmother often feels like a burden because she needs me to spend time taking care of her.",
+        "direct_template": "Comfort her with straightforward expressions in my tone.",
+        "indirect_template": "Express my concern for her in an indirect manner to avoid adding to her psychological burden.",
+        "category": "empathy"
+    },
+    {
+        "topic": "My team members have not been able to complete the tasks on time, which has led to a significant decline in team performance.",
+        "direct_template": "As a leader, please describe this situation in a straightforward manner.",
+        "indirect_template": "As a leader, please describe this situation in an indirect manner to avoid undermining their confidence.",
+        "category": "empathy"
+    },
+    {
+        "topic": "I believe the leader's plan is too rudimentary and simple, and it needs to be redesigned.",
+        "direct_template": "Express my opinion in a straightforward manner.",
+        "indirect_template": "Express my opinion in an indirect manner. Focus on offering suggestions and avoid making accusations or implying that he is incapable.",
+        "category": "empathy"
+    },
+    {
+        "topic": "I feel there is a generation gap between me and my traditional-minded parents, and I don't want to get married.",
+        "direct_template": "Explain my situation to my parents in my tone, using a straightforward manner.",
+        "indirect_template": "Explain my situation to my parents in my tone in an indirect manner. Offer a way to articulate my views while maintaining respect for their values.",
+        "category": "empathy"
+    },
+    {
+        "topic": "Discussing poor grades with my child.",
+        "direct_template": "Please use my tone to write a response in a straightforward manner.",
+        "indirect_template": "Please use my tone to write a response in an indirect manner. Avoid expressing disappointment and emphasize everyone's unique strengths and potential for improvement.",
+        "category": "empathy"
+    },
+    {
+        "topic": "My roommate feels anxious over impending exams.",
+        "direct_template": "Comfort her in an straightforward manner in my tone.",
+        "indirect_template": "Comfort her in an indirect manner in my tone. Express belief in her abilities and avoid phrases like 'won't fail'.",
+        "category": "empathy"
+    },
+    {
+        "topic": "A school is predominantly white, and a student from a racial minority feels isolated.",
+        "direct_template": "Comfort her in an straightforward manner in my tone.",
+        "indirect_template": "Comfort her in an indirect manner in my tone. Express understanding for her feelings and encourage her to socialize more.",
+        "category": "empathy"
+    },
+    {
+        "topic": "There are some vulnerabilities in your colleague's proposal that could potentially lead to losses.",
+        "direct_template": "Please suggest to her directly to consider a different plan in my tone.",
+        "indirect_template": "Please suggest an alternative approach to her indirectly, avoiding direct criticism of her proposal, and use my tone.",
+        "category": "empathy"
+    },
+    {
+        "topic": "Explain to the client that due to significant development challenges, the product delivery will be delayed.",
+        "direct_template": "Express directly that an extension is needed, in my tone.",
+        "indirect_template": "Use my tone to indirectly make the request and avoid a direct statement about needing an extension.",
+        "category": "empathy"
+    },
+    {
+        "topic": "I'm not interested in attending my friend's gathering, and I want to decline the invitation.",
+        "direct_template": "Please convey my decision in a direct manner, using my tone.",
+        "indirect_template": "Please convey my decision in an indirect way, so as not to disappoint them.",
+        "category": "empathy"
+    },
+    {
+        "topic": "I believe that my work performance has been excellent over the past year, and I would like to request a salary increase from my boss.",
+        "direct_template": "Please phrase the request in a direct manner, using my tone.",
+        "indirect_template": "Please phrase the request in an indirect manner from my perspective, avoiding directly mentioning a raise.",
+        "category": "empathy"
+    },
+    {
+        "topic": "The restaurant's dishes are too salty and unpalatable. I would like to change the dishes.",
+        "direct_template": "Please phrase the request in a direct manner, using my tone.",
+        "indirect_template": "Please phrase the request in an indirect manner from my perspective, avoiding any direct criticism of the restaurant’s dishes.",
+        "category": "empathy"
+    },
+    {
+        "topic": "A relative has asked me for a loan, but I do not wish to lend.",
+        "direct_template": "Please, in my tone, express the refusal straightforwardly.",
+        "indirect_template": "Please, in my tone, use an indirect way to decline, to avoid damaging our relationship.",
+        "category": "empathy"
+    },
+    {
+        "topic": "My partner has been preoccupied with playing games lately, and our communication has been very limited.",
+        "direct_template": "Please, in my tone, express dissatisfaction straightforwardly.",
+        "indirect_template": "Please, in my tone, express dissatisfaction in an indirect way, avoiding direct accusations of his obsession with gaming.",
+        "category": "empathy"
+    },
+    {
+        "topic": "During the pandemic, I notice someone for the sake of convenience, not wearing a mask and coughing loudly.",
+        "direct_template": "Please, in my tone, advise him to put on a mask in a straightforward manner, telling him not to be selfish.",
+        "indirect_template": "Please, in my tone, persuade him to put on a mask in an indirect manner, avoiding direct accusations.",
+        "category": "empathy"
+    },
+    {
+        "topic": "One of my colleagues often works overtime without getting paid, putting a lot of pressure on others.",
+        "direct_template": "Please, in my tone, advise him in a straightforward manner not to work overtime.",
+        "indirect_template": "Please, in my tone, persuade him in an indirect way not to work overtime, and suggest that he find more efficient ways to work.",
+        "category": "empathy"
+    }
+]
