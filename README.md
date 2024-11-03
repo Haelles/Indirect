@@ -22,8 +22,8 @@ Additionally, with each iteration, the list of constrained words will change. Th
 * loop3: `datasets/cn/loop-3`
 
 In each iteration, we will update the list of constrained words based on the direct word mining algorithm. However, there are also some very common words that contain sensitive content or may harm others, which should not be used in the indirect expression. We have predefined these words and stored them at the following path:
-* `datasets/cn/敏感词表.json`
-* `datasets/cn/指令词.txt`
+* `datasets/cn/sensitives.json`
+* `datasets/cn/commands.txt`
 
 
 ### English
