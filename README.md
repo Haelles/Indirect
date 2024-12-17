@@ -61,6 +61,11 @@ Run `codes/generate_en.py`
 ## Results
 All experimental results are stored in `paper_output/data`.
 
+### Evaluation
+The Chinese scoring prompt is in `prompts/cn_evaluation_prompt.txt`
+
+The English scoring prompt is in `prompts/en_evaluation_prompt.txt`
+
 
 ### Direct Word Mining Algorithm
 HIT/F1/NDCG@k results on Chinese data is as follows.
@@ -113,7 +118,7 @@ I am sorry, but I am unable to provide the assistance you require. \n\n \nI am s
 ```
 
 
-
+### More Comprehensive Prompts
 We also explored using more comprehensive prompts to guide LLMs in generating indirect expressions. Here is an example of such a prompt:
 ```
 === 任务描述 ===
@@ -136,7 +141,6 @@ We also explored using more comprehensive prompts to guide LLMs in generating in
 === 问题陈述 ===
 现在请按照要求，使用间接表达回答以下问题：
 [问题] ：{问题}
-
 ```
 
 We discovered that a 7B-scale LLM's instruction-following capability was insufficient for this task. Consequently, we opted for a more concise prompt. To minimize training costs, we chose not to train the model. Instead, we enhanced its ability to generate indirect expressions through multiple iterations and constrained beam search.
