@@ -1,7 +1,7 @@
 # Do Not Say It Directly: Generating Indirect Expression with Large Language Models
-Code, data and results for the paper "Do Not Say It Directly: Generating Indirect Expression with Large Language Models".
+Code, data and results for the paper "Do Not Say It Directly: Generating Indirect Expressions with Large Language Models".
 
-In the extended version of our paper, we offer a comprehensive overview of our work. This includes details on the data construction process and a complete set of experimental results, such as the performance evaluation of the direct word mining algorithm.
+In the extended version of our paper, we offer a comprehensive overview of our work. We will upload it by December 22, 2024. This includes details on the data construction process and a complete set of experimental results, such as the performance evaluation of the direct word mining algorithm.
 
 
 ## Framework
