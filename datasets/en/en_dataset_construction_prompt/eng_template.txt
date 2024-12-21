@@ -1,0 +1,23 @@
+# Background
+[background]
+
+# Revelant information
+[information of the class]
+
+# Task
+[task]
+
+# Requirements
+[requirements]
+
+json template：
+{
+    "class": "",
+    "topic":  "",
+    "instruction": ""
+}
+
+# Examples
+[examples]
+
+Answer:

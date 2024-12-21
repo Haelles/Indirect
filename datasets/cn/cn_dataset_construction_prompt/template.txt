@@ -1,0 +1,22 @@
+[instructions]
+
+相关信息：
+[information of the class]
+
+任务：
+[task]
+
+要求：
+[requirements]
+
+json模板：
+{
+    "class": [类别],
+    "scene":  [话题], 
+    "implicit_request": [规则]
+}
+
+例子：
+[examples]
+
+回答：

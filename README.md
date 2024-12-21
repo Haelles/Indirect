@@ -1,8 +1,9 @@
 # Do Not Say It Directly: Generating Indirect Expression with Large Language Models
 Code, data and results for the paper "Do Not Say It Directly: Generating Indirect Expressions with Large Language Models".
 
-In the extended version of our paper, we offer a comprehensive overview of our work. We will upload it by December 22, 2024. This includes details on the data construction process and a complete set of experimental results, such as the performance evaluation of the direct word mining algorithm.
+In the extended version of our paper, we offer a comprehensive overview of our work. We will upload it by December 24, 2024. This includes details on the data construction process and a complete set of experimental results, such as the performance evaluation of the direct word mining algorithm.
 
+Prior to this, corresponding data, examples, and experimental results have been uploaded to this repository and can be referred to as a preliminary reference.
 
 ## Framework
 ![framework](figure/framework.png)
@@ -17,6 +18,8 @@ conda activate indirect
 
 ## Data
 ### Chinese
+The prompt used for constructing the dataset and the manually written examples are located in /home/yp22/coling_upload/datasets/cn/cn_dataset_construction_prompt.
+
 The path to the original Chinese data is `datasets/cn/Dataset.json`. During the experiment, we fill the Chinese data into the template (`datasets/cn/templates.json`) as the final input, which can provide richer guidance information to the LLM.
 
 Additionally, with each iteration, the list of constrained words will change. The path to the prompt input for the LLM in each iteration is as follows:
@@ -30,6 +33,8 @@ In each iteration, we will update the list of constrained words based on the dir
 
 
 ### English
+The prompt used for constructing the dataset and the manually written examples are located in /home/yp22/coling_upload/datasets/en/en_dataset_construction_prompt.
+
 The path to the original English data is `datasets/en/Dataset.json`. The path to the prompt input for the LLM in each iteration is as follows:
 * loop1: `datasets/en/loop-1`
 * loop2: `datasets/en/loop-2`
