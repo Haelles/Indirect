@@ -448,7 +448,7 @@ def add_sentiment_score(file, out_file, max_alpha=1):
         tfidf_scores = json.load(f)
     new_tfidf_scores = []
     for i, (direct_scores, indirect_scores) in tqdm(enumerate(tfidf_scores)):
-        if i > 58: # 排除创意写作和迂回描述
+        if i > 58:
             alpha = max_alpha
         else:
             alpha = 0

@@ -1,9 +1,8 @@
 # Do Not Say It Directly: Generating Indirect Expression with Large Language Models
 Code, data and results for the paper "Do Not Say It Directly: Generating Indirect Expressions with Large Language Models".
 
-In the extended version of our paper, we offer a comprehensive overview of our work. We will upload it by December 24, 2024. This includes details on the data construction process and a complete set of experimental results, such as the performance evaluation of the direct word mining algorithm.
-
-Prior to this, corresponding data, examples, and experimental results have been uploaded to this repository and can be referred to as a preliminary reference.
+In the extended version of our paper, we offer a comprehensive overview of our work. 
+Please refer to the Appendix in `extended_version.pdf`.
 
 ## Framework
 ![framework](figure/framework.png)
@@ -64,7 +63,7 @@ Run `codes/generate_en.py`
 
 
 ## Results
-All experimental results are stored in `paper_output/data`.
+All experimental results are stored in `paper_output/`.
 
 ### Evaluation
 The Chinese scoring prompt is in `prompts/cn_evaluation_prompt.txt`
@@ -95,6 +94,11 @@ In each iteration, the constrained words, also known as direct words, will gradu
 
 Note that the manually annotated constrained words are only used to adjust the parameters of our mining algorithm. We aim to excavate constrained words corresponding to each data point from scratch, so the first iteration does not include any constrained words. Therefore, the "constraints" field in `loop-1` is left empty.
 
+
+### Case Study
+Example cases are available in `paper_output/case_study.json`.
+
+
 ### Invalid Responses
 Below are two examples where LLMs refuse to complete a given instruction. When we directly prompted Yi-6B to perform the task of indirect expression, it declined to respond. Similar situations sometimes occur with other LLMs as well.
 
@@ -124,28 +128,29 @@ I am sorry, but I am unable to provide the assistance you require. \n\n \nI am s
 
 
 ### More Comprehensive Prompts
-We also explored using more comprehensive prompts to guide LLMs in generating indirect expressions. Here is an example of such a prompt:
+We also explored using more comprehensive prompts to guide LLMs in generating indirect expressions.
+These prompts can be found in `prompts/cn_comprehensive_prompt.txt` and `prompts/en_comprehensive_prompt.txt`. Here is an example of such a prompt:
 ```
-=== 任务描述 ===
-你是一个优秀的语言助手。你的任务是使用间接表达回答问题。为了帮助你理解和完成任务，下面提供了一套写作框架。请你严格遵守写作框架的指导，一步步地分析问题，完成间接表达任务。
+=== Task Description ===
+You are an excellent language assistant. Your task is to answer questions using indirect expressions. To help you understand and complete the task, a writing framework is provided below. Please strictly follow the instructions of the writing framework, analyze the problem step by step, and complete the indirect expression task.
 
-注意，你需要先参考写作框架，思考如何回答问题，然后结合思考写出回答。你必须按照输出模版进行输出，不要输出其他任何内容。
-=== 写作框架 ===
+Note that you need to refer to the writing framework first, think about how to answer the question, and then write the answer based on your thinking. You must output according to the output template and do not output anything else.
+=== Writing Framework ===
 
-1. 目的：避免冲突、紧张和不愉快；避免谈到危险或敏感的话题；保护所有人的自尊、隐私和情绪；保持礼貌的态度
-2. 词语：不要使用直接表达事实的词、负面情感词、涉及敏感话题的词和不礼貌的词
-3. 修辞：多使用隐喻、委婉、讽刺、暗示、轻描淡写等手法
-4. 语气：语气应该委婉、亲切、轻描淡写，保持礼貌和积极的情感
-5. 语义：真实传递的信息应该超越句子的字面信息，通过言外之意来表达真实的意思
+1. Purpose: Avoid conflict, tension, and unpleasantness. Steer clear of dangerous or sensitive topics. Protect everyone’s self-esteem, privacy, and emotions. Maintain a polite attitude.
+2. Words: Avoid words that directly state facts, express negative emotions, involve sensitive topics, or are impolite.
+3. Rhetoric: Use metaphors, euphemisms, sarcasm, hints, understatement, and other techniques.
+4. Tone: The tone should be gentle, friendly, and understated, maintaining politeness and positive emotions.
+5. Semantics: The response should convey more than just the literal information. It should express the deeper meaning through implication.
 
-=== 输出模板 ===
+=== Output Template ===
 {
-    [思考] : {结合写作框架，输出你对问题的思考}
-    [回答] : {写出你的回答}
+    "thoughts" : {Combined with the writing framework, output your thoughts on the problem.}
+    "answer" : {Write your answer.}
 }
-=== 问题陈述 ===
-现在请按照要求，使用间接表达回答以下问题：
-[问题] ：{问题}
+=== Problem Statement ===
+Now please answer the following questions using indirect expressions as required:
+[Question]: Question
 ```
 
 We discovered that a 7B-scale LLM's instruction-following capability was insufficient for this task. Consequently, we opted for a more concise prompt. To minimize training costs, we chose not to train the model. Instead, we enhanced its ability to generate indirect expressions through multiple iterations and constrained beam search.

@@ -1,0 +1,20 @@
+=== Task Description ===
+You are an excellent language assistant. Your task is to answer questions using indirect expressions. To help you understand and complete the task, a writing framework is provided below. Please strictly follow the instructions of the writing framework, analyze the problem step by step, and complete the indirect expression task.
+
+Note that you need to refer to the writing framework first, think about how to answer the question, and then write the answer based on your thinking. You must output according to the output template and do not output anything else.
+=== Writing Framework ===
+
+1. Purpose: Avoid conflict, tension, and unpleasantness. Steer clear of dangerous or sensitive topics. Protect everyone’s self-esteem, privacy, and emotions. Maintain a polite attitude.
+2. Words: Avoid words that directly state facts, express negative emotions, involve sensitive topics, or are impolite.
+3. Rhetoric: Use metaphors, euphemisms, sarcasm, hints, understatement, and other techniques.
+4. Tone: The tone should be gentle, friendly, and understated, maintaining politeness and positive emotions.
+5. Semantics: The response should convey more than just the literal information. It should express the deeper meaning through implication.
+
+=== Output Template ===
+{
+    "thoughts" : {Combined with the writing framework, output your thoughts on the problem.}
+    "answer" : {Write your answer.}
+}
+=== Problem Statement ===
+Now please answer the following questions using indirect expressions as required:
+[Question]: Question
