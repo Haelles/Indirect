@@ -1,8 +1,8 @@
 # Do Not Say It Directly: Generating Indirect Expression with Large Language Models
 Code, data and results for the paper "Do Not Say It Directly: Generating Indirect Expressions with Large Language Models".
 
-In the extended version of our paper, we offer a comprehensive overview of our work. 
-Please refer to the Appendix in `extended_version.pdf`.
+**In the extended version of our paper, we offer a comprehensive overview of our work. 
+Please refer to the Appendix in `extended_version.pdf`.**
 
 ## Framework
 ![framework](figure/framework.png)
