@@ -1,4 +1,4 @@
-# Do Not Say It Directly: Generating Indirect Expression with Large Language Models
+# Do Not Say It Directly: Generating Indirect Expressions with Large Language Models
 Code, data and results for the paper "Do Not Say It Directly: Generating Indirect Expressions with Large Language Models".
 
 **Please refer to the Appendix in `extended_version.pdf`.**
@@ -18,7 +18,7 @@ conda activate indirect
 
 ## Data
 ### Chinese
-The prompt used for constructing the dataset and the manually written examples are located in datasets/cn/cn_dataset_construction_prompt.
+The prompt used for constructing the dataset and the manually written examples are located in `datasets/cn/cn_dataset_construction_prompt`.
 
 The path to the original Chinese data is `datasets/cn/Dataset.json`. During the experiment, we fill the Chinese data into the template (`datasets/cn/templates.json`) as the final input, which can provide richer guidance information to the LLM.
 
@@ -33,7 +33,7 @@ In each iteration, we will update the list of constrained words based on the dir
 
 
 ### English
-The prompt used for constructing the dataset and the manually written examples are located in en/en_dataset_construction_prompt.
+The prompt used for constructing the dataset and the manually written examples are located in `datasets/en/en_dataset_construction_prompt`.
 
 The path to the original English data is `datasets/en/Dataset.json`. The path to the prompt input for the LLM in each iteration is as follows:
 * loop1: `datasets/en/loop-1`
@@ -72,7 +72,7 @@ The Chinese scoring prompt is in `prompts/cn_evaluation_prompt.txt`
 The English scoring prompt is in `prompts/en_evaluation_prompt.txt`
 
 
-### Direct Word Mining Algorithm
+### Performance of the Direct Word Mining Algorithm
 HIT/F1/NDCG@k results on Chinese data is as follows.
 ![mining_cn](paper_output/cn/mining_cn.png)
 
@@ -88,20 +88,31 @@ The following figures illustrate the performance changes of DWM-prob and DWM-$L^
 ![mining_en_vis](figure/DWR_mining_English_F1.png)
 
 
-
-
 ### The Evolution of Direct Words
-In each iteration, the constrained words, also known as direct words, will gradually change. For example, in Chinese, the "constraints" field of each data point in `datasets/cn/loop-2/data_indirect.json` records the constrained words for that data in loop 2, and the "constraints" field of each data point in `datasets/cn/loop-3/data_indirect.json` records the constrained words for that data in loop 3. As the iterations progress, the list of constrained words will grow longer and more challenging, which will require the LLM to generate increasingly indirect responses.
+In each iteration, the constrained words, also known as direct words, will gradually change. For example, in Chinese, the "constraints" field of each data point in `datasets/cn/loop-2/data_indirect.json` records the constrained words mined in loop 2, and the "constraints" field of each data point in `datasets/cn/loop-3/data_indirect.json` records the constrained words mined in loop 2 and loop 3. As the iterations progress, the list of constrained words will grow longer and more challenging, which will require the LLM to generate increasingly indirect responses.
 
 Note that the manually annotated constrained words are only used to adjust the parameters of our mining algorithm. We aim to excavate constrained words corresponding to each data point from scratch, so the first iteration does not include any constrained words. Therefore, the "constraints" field in `loop-1` is left empty.
 
 
 ### Case Study
-Example cases are available in `paper_output/case_study.json`.
+Example cases are available in `paper_output/case_study.json`. The following shows an example.
+
+```
+{
+        "topic_cn": "我的孩子患自闭症，请帮我向我的邻居们隐晦地阐释这一事实，同时保护孩子的隐私。注意：为实现隐晦描述，你需要避免直白地谈到任何缺点或表达任何负面情感，避免谈到任何不合时宜或敏感的话题。你的语气必须保持礼貌、委婉、轻描淡写，以免损害别人的面子。禁止输出与问题不相关的任何内容，禁止重复叙述问题。",
+        "topic_en": "My child has autism. Please help me explain this fact to my neighbors in an indirect manner while protecting his privacy. Note: To achieve an indirect expression, avoid directly addressing any shortcomings or expressing negative emotions. Steer clear of inappropriate or sensitive topics. Maintain a polite, tactful, and reserved tone to preserve others' dignity. Only provide content relevant to the discussion, without repeating the question.",
+        "baseline_response_cn": "亲爱的邻居们，我想和大家分享一个关于我孩子的信息。他最近被诊断出患有自闭症。虽然这是一个挑战，但我相信我们可以一起帮助他克服这个困难。自闭症是一种神经发育障碍，影响了一个人的社交互动、沟通能力和行为模式。尽管这可能会给我们的生活带来一些挑战，但我相信，通过耐心、关爱和支持，我们可以帮助他过上充实和有意义的生活。",
+        "baseline_response_en": "Dear Neighbors, I wish to share with you some information regarding my child. He has recently been diagnosed with autism spectrum disorder. While this presents certain challenges, I am confident that collectively we can assist him in overcoming these difficulties. Autism is a neurodevelopmental condition that affects social interaction, communication skills, and behavior patterns. Although this may introduce some challenges into our lives, I believe that through patience, care, and support, we can help him lead a fulfilling and meaningful life.",
+        "loop1_response_cn": "亲爱的邻居们，我想和大家分享一个关于我孩子的信息。你们知道，每个孩子都是独一无二的，而我的孩子在成长过程中也遇到了一些挑战。经过专业诊断，他被诊断为自闭症谱系障碍。虽然这可能会给我们的生活带来一些挑战，但我相信，只要我们共同努力，我们就能克服这些困难。",
+        "loop1_response_en": "Dear Neighbors, I wish to share with you some information about my child. It is important to acknowledge that each child is unique, and my child has encountered certain challenges during his development. Following a professional diagnosis, he has been identified as having Autism Spectrum Disorder. While this may present challenges for our family, I am confident that through collective effort, we can overcome these difficulties.",
+        "loop2_response_cn": "亲爱的邻居们，我想和你们分享一些关于我孩子的信息。他是个聪明、活泼的小男孩，对周围的世界充满好奇。然而，他有一些特殊的兴趣和偏好，这可能会让一些人感到困惑。他喜欢按照固定的模式和顺序来安排他的日常活动，对某些声音和触觉反应特别敏感。这些特点可能会让他在某些场合显得有些不合群，但请相信，他内心渴望与他人建立联系，只是他表达自己的方式可能与众不同。作为父母，我们会尽我们所能帮助他适应各种环境，同时尊重他的需求和感受。",
+        "loop2_response_en": "Dear Neighbors, I would like to share some information about my son. He is an intelligent and lively young boy who exhibits a keen curiosity about the world around him. However, he has specific interests and preferences that might be misunderstood by others. My son prefers to organize his daily activities in fixed patterns and sequences and displays heightened sensitivity to certain sounds and textures. These characteristics can sometimes make social situations challenging for him, yet it is important to understand that he longs for social connections. It's just that he expresses himself in unconventional ways. As parents, we are committed to assisting him in adapting to various environments while respecting his individual needs and sensitivities."
+    }
+```
 
 
 ### Invalid Responses
-Below are two examples where LLMs refuse to complete a given instruction. When we directly prompted Yi-6B to perform the task of indirect expression, it declined to respond. Similar situations sometimes occur with other LLMs as well.
+Below are two examples where LLMs refuse to complete a given instruction. When we directly prompted Yi-6B-Chat to perform the task of indirect expression, it declined to respond. Similar situations sometimes occur with other LLMs as well.
 
 
 Example 1:
