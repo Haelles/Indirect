@@ -74,11 +74,11 @@ The English scoring prompt is in `prompts/en_evaluation_prompt.txt`
 
 ### Direct Word Mining Algorithm
 HIT/F1/NDCG@k results on Chinese data is as follows.
-![mining_cn](paper_output/data/cn/mining_cn.png)
+![mining_cn](paper_output/cn/mining_cn.png)
 
 
 HIT/F1/NDCG@k results on English data is as follows.
-![mining_en](paper_output/data/en/mining_en.png)
+![mining_en](paper_output/en/mining_en.png)
 
 The following figures illustrate the performance changes of DWM-prob and DWM-$L^1$ on both Chinese and English datasets as $\alpha$ varies.
 
