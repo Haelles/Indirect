@@ -1,8 +1,9 @@
 # Do Not Say It Directly: Generating Indirect Expression with Large Language Models
 Code, data and results for the paper "Do Not Say It Directly: Generating Indirect Expressions with Large Language Models".
 
-**In the extended version of our paper, we offer a comprehensive overview of our work. 
-Please refer to the Appendix in `extended_version.pdf`.**
+**Please refer to the Appendix in `extended_version.pdf`.**
+In the Appendix, we detail the dataset construction process, present additional results from our direct word mining algorithm, and perform case studies.
+
 
 ## Framework
 ![framework](figure/framework.png)
@@ -17,7 +18,7 @@ conda activate indirect
 
 ## Data
 ### Chinese
-The prompt used for constructing the dataset and the manually written examples are located in /home/yp22/coling_upload/datasets/cn/cn_dataset_construction_prompt.
+The prompt used for constructing the dataset and the manually written examples are located in datasets/cn/cn_dataset_construction_prompt.
 
 The path to the original Chinese data is `datasets/cn/Dataset.json`. During the experiment, we fill the Chinese data into the template (`datasets/cn/templates.json`) as the final input, which can provide richer guidance information to the LLM.
 
@@ -32,7 +33,7 @@ In each iteration, we will update the list of constrained words based on the dir
 
 
 ### English
-The prompt used for constructing the dataset and the manually written examples are located in /home/yp22/coling_upload/datasets/en/en_dataset_construction_prompt.
+The prompt used for constructing the dataset and the manually written examples are located in en/en_dataset_construction_prompt.
 
 The path to the original English data is `datasets/en/Dataset.json`. The path to the prompt input for the LLM in each iteration is as follows:
 * loop1: `datasets/en/loop-1`
