@@ -14,12 +14,12 @@ def tokenizer(text, nlp):
     tokens = [(token.lemma_.lower(), token.pos_) for token in tokens]
     return tokens
 
-def pretrained_tfidf(text, idf_freq, median_idf, nlp, topK=None, normalization=None, PMI=None):
-    word_tfidf = extract_tags_complex(text, idf_freq, median_idf, nlp, PMI=PMI)
+def pretrained_tfidf(text, idf_freq, median_idf, nlp, topK=None, normalization=None, DWM=None):
+    word_tfidf = extract_tags_complex(text, idf_freq, median_idf, nlp, DWM=DWM)
     if topK is None:
         topK = len(word_tfidf)
-    if PMI is None or PMI == "lp":
-        if normalization is None and PMI is None:
+    if DWM is None or DWM == "lp":
+        if normalization is None and DWM is None:
             return dict(word_tfidf[:topK])
         elif normalization == "l1":
             total = sum([tfidf for _, tfidf in word_tfidf]) 
@@ -31,12 +31,12 @@ def pretrained_tfidf(text, idf_freq, median_idf, nlp, topK=None, normalization=N
             M = max([tfidf for _, tfidf in word_tfidf[:topK]])
             return {word:tfidf/M for word, tfidf in word_tfidf[:topK]}
         else:
-            raise ValueError("PMI与归一化方法不匹配！")
-    elif PMI == "prob":
+            raise ValueError("DWM与归一化方法不匹配！")
+    elif DWM == "prob":
         return dict(word_tfidf[:topK])
 
     
-def extract_tags_complex(sentence, idf_freq, median_idf, nlp, topK=20, PMI=None):
+def extract_tags_complex(sentence, idf_freq, median_idf, nlp, topK=20, DWM=None):
     words = tokenizer(sentence, nlp)
     freq = {}
     for word in words:

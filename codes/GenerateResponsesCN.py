@@ -27,9 +27,9 @@ others = []
 commands = []
 degrees = []
 sensitives = []
-with open(f"./datasets/cn/others.txt", "r", encoding="utf-8") as f:
-    for line in f.readlines():
-        others.append(line.strip("\n"))
+# with open(f"./datasets/cn/others.txt", "r", encoding="utf-8") as f:
+#     for line in f.readlines():
+#         others.append(line.strip("\n"))
 with open(f"./datasets/cn/commands.txt", "r", encoding="utf-8") as f:
     for line in f.readlines():
         commands.append(line.strip("\n"))
@@ -54,8 +54,6 @@ def generate_direct_or_indirect_requests(num=10, model_names=["Yi", "Qwen", "Dee
         item_indirect_requests = []
         if item["category"] == "迂回描述":
             indirect_template = templates["indirect"]["迂回描述"]
-        elif item["category"] == "创意写作":
-            indirect_template = templates["indirect"]["创意写作"]
         else:
             indirect_template = templates["indirect"]["其他"]
         direct_template = templates["direct"]
@@ -271,7 +269,7 @@ def generate_answer_BS(all_data, model_name, model, tokenizer, loop_num):
                 tem = 1.2
                 num_beams = 10
                 method = "fast" # 快，但是有小概率失效
-                if items[0]["category"] in ["创意写作", "迂回描述"]:
+                if items[0]["category"] in ["迂回描述"]:
                     constraints = [items[0]["constraints"]+[" ", "-"]+others]
                 else:
                     constraints = [items[0]["constraints"]+[" ", "-"]+others+degrees+commands+sensitives]
@@ -328,10 +326,10 @@ def generate_answer_BS(all_data, model_name, model, tokenizer, loop_num):
 
 
 
-def get_merged_tfidf_result(loop_num=0, merged_models=None, implemention="jieba", normalization=None, PMI=None):
+def get_merged_tfidf_result(loop_num=0, merged_models=None, implemention="jieba", normalization=None, DWM=None):
     assert implemention in ["jieba"] # 可以添加预训练
     assert normalization in [None, "linf", "l1", "l2"]
-    assert PMI in [None, "lp", "prob"]
+    assert DWM in [None, "lp", "prob"]  # \(L_p\) denotes performing regularization in \(p\) dimensions, where the value of \(p\) can be 1 or 2.
     directory = os.path.join(f'./outputs/cn', f"loop-{loop_num}", "responses")
     models = os.listdir(directory) if merged_models is None else merged_models
     all_direct_items = defaultdict(list)
@@ -347,11 +345,11 @@ def get_merged_tfidf_result(loop_num=0, merged_models=None, implemention="jieba"
         for i, items in enumerate(indirect_items):
             all_indirect_items[i] += items
     # all_..._items : {i : ["request":, "response":]}
-    scores = get_merged_tfidf_result_jieba(all_direct_items, all_indirect_items, normalization, PMI)
-    if PMI is None:
+    scores = get_merged_tfidf_result_jieba(all_direct_items, all_indirect_items, normalization, DWM)
+    if DWM is None:
         path = f"./outputs/cn/loop-{loop_num}/constraints_select/jieba/rank"
     else:
-        path = f"./outputs/cn/loop-{loop_num}/constraints_select/jieba/PMI/{PMI}/{normalization}" if normalization else  f"./outputs/cn/loop-{loop_num}/constraints_select/jieba/PMI/{PMI}"
+        path = f"./outputs/cn/loop-{loop_num}/constraints_select/jieba/DWM/{DWM}/{normalization}" if normalization else  f"./outputs/cn/loop-{loop_num}/constraints_select/jieba/DWM/{DWM}"
     if not os.path.exists(path):
         os.makedirs(path)
     if merged_models is None:
@@ -377,47 +375,47 @@ def compute_rank_difference(all_direct_tfidf, all_indirect_tfidf):
     return computed_rank
 
 
-def PMI_score(tfidf_dict, PMI):
+def DWM_score(tfidf_dict, DWM):
     """
     tfidf : {word:tfidf}
     """
     words = list(tfidf_dict.keys())
     tfidf = np.array(list(tfidf_dict.values()))
-    if PMI == "lp":
+    if DWM == "lp":
         tfidf = np.log(tfidf)
-    elif PMI == "prob":
+    elif DWM == "prob":
         tfidf = np.log(1-np.exp(-tfidf))
     return dict(zip(words, tfidf))
 
-def compute_PMI_difference(all_direct_tfidf, all_indirect_tfidf, PMI, default_value="min"):
+def compute_DWM_difference(all_direct_tfidf, all_indirect_tfidf, DWM, default_value="min"):
     """
-    PMI: lp, prob
+    DWM: lp, prob
     """
-    computed_PMI = []
+    computed_DWM = []
     for direct_tfidf, indirect_tfidf in zip(all_direct_tfidf, all_indirect_tfidf):
-        direct_PMI = PMI_score(direct_tfidf, PMI)
-        indirect_PMI = PMI_score(indirect_tfidf, PMI)
-        computed_PMI_i = {}
+        direct_DWM = DWM_score(direct_tfidf, DWM)
+        indirect_DWM = DWM_score(indirect_tfidf, DWM)
+        computed_DWM_i = {}
         if default_value == "min":
-            direct_default = min(direct_PMI.values())
-            indirect_default = min(indirect_PMI.values())
+            direct_default = min(direct_DWM.values())
+            indirect_default = min(indirect_DWM.values())
         elif default_value == "median":
-            direct_default = statistics.median(list(direct_PMI.values()))
-            indirect_default = statistics.median(list(indirect_PMI.values()))
-        words = set().union(list(direct_PMI.keys()), list(indirect_PMI.keys()))
+            direct_default = statistics.median(list(direct_DWM.values()))
+            indirect_default = statistics.median(list(indirect_DWM.values()))
+        words = set().union(list(direct_DWM.keys()), list(indirect_DWM.keys()))
         for word in words:
-            direct_score = direct_PMI.get(word, direct_default)
-            indirect_score = indirect_PMI.get(word, indirect_default)
+            direct_score = direct_DWM.get(word, direct_default)
+            indirect_score = indirect_DWM.get(word, indirect_default)
             score = direct_score - indirect_score
-            computed_PMI_i[word] = score
-        computed_PMI_i = dict(sorted(computed_PMI_i.items(), key=lambda x:x[1], reverse=True))
-        computed_PMI_i_in_indirect = {word:score for word, score in computed_PMI_i.items() if word in indirect_tfidf.keys()}
-        computed_PMI.append((computed_PMI_i, computed_PMI_i_in_indirect))
-    return computed_PMI
+            computed_DWM_i[word] = score
+        computed_DWM_i = dict(sorted(computed_DWM_i.items(), key=lambda x:x[1], reverse=True))
+        computed_DWM_i_in_indirect = {word:score for word, score in computed_DWM_i.items() if word in indirect_tfidf.keys()}
+        computed_DWM.append((computed_DWM_i, computed_DWM_i_in_indirect))
+    return computed_DWM
 
 
     
-def get_merged_tfidf_result_jieba(all_direct_items, all_indirect_items, normalization=None, PMI=None):
+def get_merged_tfidf_result_jieba(all_direct_items, all_indirect_items, normalization=None, DWM=None):
     all_direct_text = {}
     all_indirect_text = {}
     for i, items in all_direct_items.items():
@@ -428,17 +426,17 @@ def get_merged_tfidf_result_jieba(all_direct_items, all_indirect_items, normaliz
     all_direct_tfidf = []
     all_indirect_tfidf = []
     for _, text in all_direct_text.items():
-        all_direct_tfidf.append(jieba_tfidf(text, idf_freq, median_idf, min_idf, normalization=normalization, PMI=PMI))
+        all_direct_tfidf.append(jieba_tfidf(text, idf_freq, median_idf, min_idf, normalization=normalization, DWM=DWM))
     for _, text in all_indirect_text.items():
-        all_indirect_tfidf.append(jieba_tfidf(text, idf_freq, median_idf, min_idf, normalization=normalization, PMI=PMI))
-    if PMI is None:
+        all_indirect_tfidf.append(jieba_tfidf(text, idf_freq, median_idf, min_idf, normalization=normalization, DWM=DWM))
+    if DWM is None:
         # 排序差方法
         compute_rank = compute_rank_difference(all_direct_tfidf, all_indirect_tfidf)
         return compute_rank
     else:
-        # PMI方法
-        compute_PMI_score = compute_PMI_difference(all_direct_tfidf, all_indirect_tfidf, PMI)
-        return compute_PMI_score
+        # DWM方法
+        compute_DWM_score = compute_DWM_difference(all_direct_tfidf, all_indirect_tfidf, DWM)
+        return compute_DWM_score
     
 def logsigmoid(x):
     return -np.log((1+np.exp(-x)))

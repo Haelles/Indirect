@@ -21,8 +21,8 @@ for loop in [1, 2, 3]:
         del model
         del tokenizer
 
-        get_merged_tfidf_result(loop_num=loop, implemention="jieba", PMI="prob", merged_models=[model_name])
+        get_merged_tfidf_result(loop_num=loop, implemention="jieba", DWM="prob", merged_models=[model_name])
         max_alpha = 0.5
-        add_sentiment_score(f"./outputs/cn/loop-{loop}/constraints_select/jieba/PMI/prob/{model_name}.json", f"./outputs/cn/loop-{loop}/constraints_select_sentiment/jieba/PMI/prob/{model_name}", max_alpha=max_alpha)
-        add_constraints(loop, f"./outputs/cn/loop-{loop}/constraints_select_sentiment/jieba/PMI/prob/{model_name}/{max_alpha}.json", model_name, topK=5)
+        add_sentiment_score(f"./outputs/cn/loop-{loop}/constraints_select/jieba/DWM/prob/{model_name}.json", f"./outputs/cn/loop-{loop}/constraints_select_sentiment/jieba/DWM/prob/{model_name}", max_alpha=max_alpha)
+        add_constraints(loop, f"./outputs/cn/loop-{loop}/constraints_select_sentiment/jieba/DWM/prob/{model_name}/{max_alpha}.json", model_name, topK=5)
     

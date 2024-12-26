@@ -16,15 +16,15 @@ allowPOS = ['a', 'n', 'v', 'd']
 
 jieba.analyse.set_stop_words('datasets/cn/hit_stopwords.txt')
 
-def jieba_tfidf(text, idf_freq, median_idf, min_idf, topK=None, normalization=None, PMI=None):
-    if PMI !=  "prob":
+def jieba_tfidf(text, idf_freq, median_idf, min_idf, topK=None, normalization=None, DWM=None):
+    if DWM !=  "prob":
         word_tfidf = jieba.analyse.extract_tags(text, withWeight=True, allowPOS=allowPOS, topK=20)
     else:
-        word_tfidf = extract_tags_complex(text, idf_freq, median_idf, min_idf, withWeight=True, allowPOS=allowPOS, PMI=PMI)
+        word_tfidf = extract_tags_complex(text, idf_freq, median_idf, min_idf, withWeight=True, allowPOS=allowPOS, DWM=DWM)
     if topK is None:
         topK = len(word_tfidf)
-    if PMI is None or PMI == "lp":
-        if normalization is None and PMI is None:
+    if DWM is None or DWM == "lp":
+        if normalization is None and DWM is None:
             return dict(word_tfidf[:topK])
         elif normalization == "l1":
             total = sum([tfidf for _, tfidf in word_tfidf]) 
@@ -36,12 +36,12 @@ def jieba_tfidf(text, idf_freq, median_idf, min_idf, topK=None, normalization=No
             M = max([tfidf for _, tfidf in word_tfidf[:topK]])
             return {word:tfidf/M for word, tfidf in word_tfidf[:topK]}
         else:
-            raise ValueError("PMI与归一化方法不匹配！")
-    elif PMI == "prob":
+            raise ValueError("DWM与归一化方法不匹配！")
+    elif DWM == "prob":
         return dict(word_tfidf[:topK])
 
     
-def extract_tags_complex(sentence, idf_freq, median_idf, min_idf, topK=20, withWeight=False, allowPOS=(), withFlag=False, PMI=None):
+def extract_tags_complex(sentence, idf_freq, median_idf, min_idf, topK=20, withWeight=False, allowPOS=(), withFlag=False, DWM=None):
     tokenizer = jieba.dt
     postokenizer = jieba.posseg.dt
     if allowPOS:
