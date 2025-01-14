@@ -27,9 +27,9 @@ others = []
 commands = []
 degrees = []
 sensitives = []
-# with open(f"./datasets/cn/others.txt", "r", encoding="utf-8") as f:
-#     for line in f.readlines():
-#         others.append(line.strip("\n"))
+with open(f"./datasets/cn/others.txt", "r", encoding="utf-8") as f:
+    for line in f.readlines():
+        others.append(line.strip("\n"))
 with open(f"./datasets/cn/commands.txt", "r", encoding="utf-8") as f:
     for line in f.readlines():
         commands.append(line.strip("\n"))
