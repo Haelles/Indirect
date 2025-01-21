@@ -6,7 +6,7 @@ In the Appendix, we detail the dataset construction process, present additional 
 
 
 ## Framework
-![framework](figure/framework.png)
+<img src="figure/framework.png" width="90%">
 
 
 ## Requirements
