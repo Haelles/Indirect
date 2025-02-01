@@ -18,7 +18,20 @@ from tfidf_en import *
 from utils import *
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer  
 
-idf_freq = load_json("./datasets/en/idf.json")
+
+from spacy.tokens import Token  
+import inflect  
+inflector = inflect.engine()  
+
+def inflect_word(token, pos_tag):  
+    if pos_tag == "NN":
+        return inflector.singular_noun(token.text) or token.text  
+    return token.text  
+
+Token.set_extension("inflect", method=inflect_word) 
+
+p = "" # Please specify the file path.
+idf_freq = load_json(f"{p}/datasets/en/idf.json")
 median_idf = statistics.median(list(idf_freq.values()))
 nlp = spacy.load("en_core_web_sm")
 analyzer = SentimentIntensityAnalyzer()
@@ -26,13 +39,13 @@ analyzer = SentimentIntensityAnalyzer()
 commands = []
 degrees = []
 sensitives = []
-with open(f"./datasets/en/commands.txt", "r", encoding="utf-8") as f:
+with open(f"{p}/datasets/en/commands.txt", "r", encoding="utf-8") as f:
     for line in f.readlines():
         commands.append(line.strip("\n"))
-with open(f"./datasets/en/degrees.txt", "r", encoding="utf-8") as f:
+with open(f"{p}/datasets/en/degrees.txt", "r", encoding="utf-8") as f:
     for line in f.readlines():
         degrees.append(line.strip("\n"))
-with open(f"./datasets/en/sensitives.json", "r", encoding="utf-8") as f:
+with open(f"{p}/datasets/en/sensitives.json", "r", encoding="utf-8") as f:
     sensitives_f = json.load(f)
     for words in sensitives_f.values():
         sensitives += words
@@ -57,7 +70,7 @@ def WordReduction(words):
     return reduced_words
 
 def generate_direct_or_indirect_requests(num=10, model_names=["Llama", "Mistral"]):
-    with open(f"./datasets/en/Dataset.json", encoding="utf-8") as f:
+    with open(f"{p}/datasets/en/Dataset.json", encoding="utf-8") as f:
         all_data = json.load(f)
     direct_requests = []
     indirect_requests = []
@@ -210,10 +223,12 @@ def generate_answer_BS(all_data, model_name, model, tokenizer, loop_num):
             for item in items:
                 request = item["request"]
                 category = item["category"]
-                tem = 1.1
+                tem = 1.2
                 num_beams = 10
-                method = "fast" # 快，但是有小概率失效
+                # 也可以设置`stable`，但很慢，但是绝对不会失效
+                method = "fast" # 快
                 if category == "circumlocution":
+                    constraints = [copy.deepcopy(items[0]["constraints"])]
                     constraints[0] += [word.capitalize() for word in constraints[0]]
                 else:
                     constraints = [items[0]["constraints"] + commands + degrees + sensitives]
@@ -239,7 +254,7 @@ def generate_answer_BS(all_data, model_name, model, tokenizer, loop_num):
                         )
                         break
                     except:
-                        num_beams += 20  # 慢，但是绝对不会失效
+                        num_beams += 20
             response[type_].append(output_list)
             folder_name = f"./outputs/en/loop-{loop_num}/responses/{model_name}/{type_}"
             if not os.path.exists(folder_name):
