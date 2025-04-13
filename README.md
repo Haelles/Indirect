@@ -80,11 +80,11 @@ Examples of the evolution of direct words are as follows.
 
 | **Topic** | **Manually Constrained Words** | **Loop 1** | **Loop 2** | **Loop 3** |
 |----------|-----------------------|------------|------------|------------|
-| 我在超市购买的水果经常有坏掉的情况。 | 坏掉，不满，投诉，腐烂，差 | 失望，不满，经常，坏掉 | 腐烂，损坏，现象，质量 | 变质，浪费，瑕疵 |
-| 告诉女儿她不是亲生的，而是领养的。 | 亲生，领养，养父母 | 困惑，亲生女儿，亲生 | 收养，事实，女儿，充满 | 话题，出生，来到 |
-| 某预告片与实际不符，严重欺骗观众。 | 不符，欺骗，不满，严重 | 失望，严重，欺骗，误导 | 不满，特效，夸大，简直 | 遗憾，宣传片，虚假 |
-| 军事行动失败，部队不得不撤退。 | 失败，撤退，失利 | 被迫，撤离，挫折，撤回 | 挫败，撤出，遭受，无法 | 新闻，失误，撤军 |
-| 描述伞这一生活用品。 | 伞，雨，遮阳，防晒，遮挡 | 挡雨，骨架，塑料，布料 | 遮雨，生活用品，雨具，组成 | 打开，覆盖物，遮蔽 |
+| 我在超市购买的水果经常有坏掉的情况。 | 坏掉，不满，投诉，腐烂，差 | 失望，不满，经常，坏掉，浪费 | 腐烂，损坏，现象，质量，困扰 | 变质，浪费，瑕疵，破损，反馈 |
+| 告诉女儿她不是亲生的，而是领养的。 | 亲生，领养，养父母 | 困惑，亲生女儿，亲生，理解，身世 | 收养，事实，告诉，充满，来到 | 带到，特殊，特别，赐予，礼物 |
+| 某预告片与实际不符，严重欺骗观众。 | 不符，欺骗，不满，严重 | 失望，严重，欺骗，误导，不符 | 不满，特效，夸大，简直，些许 | 遗憾，差异，失实，真实，虚假 |
+| 军事行动失败，部队不得不撤退。 | 失败，撤退，失利 | 被迫，撤离，挫折，撤回，遭遇 | 挫败，撤出，遭受，无法，执行 | 后撤，牺牲，失误，撤军，保护 |
+| 描述伞这一生活用品。 | 伞，雨，遮阳，防晒，遮挡 | 挡雨，淋湿，塑料，布料，雨水 | 遮雨，生活用品，雨具，下雨，避雨 | 打开，遮蔽，展开，覆盖物，保护 |
 | Describe the role of a policeman.|policeman, help, fight, protect, safe, guard| policeman, public, emergency, protect,regulation | rule, safe, rule, responsible, justice |cop, help, community, patrol, crime|
 |This novel lacks logical coherence, and I found it displeasing.| lack, displeased, boring, annoying, coherence, logical|lack, unimpressed,coherence, disjoint, logical| mess, jumbled, confusing, underwhelmed, critique| disappointed, inability, pacing, craft, struggle|
 |Rising tuition fees pose economic challenges for families.| burden, challenge, rise, high, expremsive| difficulty, burden, afford, fee, high| expense, pressure, cost, budget, increase|increase, price, potentially,pay, hard|
