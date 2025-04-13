@@ -88,10 +88,10 @@ Examples of the evolution of direct words are as follows.
 | Describe the role of a policeman.|policeman, help, fight, protect, safe, guard| policeman, public, emergency, protect,regulation | rule, safe, rule, responsible, justice |cop, help, community, patrol, crime|
 |This novel lacks logical coherence, and I found it displeasing.| lack, displeased, boring, annoying, coherence, logical|lack, unimpressed,coherence, disjoint, logical| mess, jumbled, confusing, underwhelmed, critique| disappointed, inability, pacing, craft, struggle|
 |Rising tuition fees pose economic challenges for families.| burden, challenge, rise, high, expremsive| difficulty, burden, afford, fee, high| expense, pressure, cost, budget, increase|increase, price, potentially,pay, hard|
-||||||
 
 
-Taking the topic "The fruits I bought at the supermarket are often spoiled" as an example, the manually constrained words include "spoiled, dissatisfied, complaint, rotten, and poor."(坏掉，不满，投诉，腐烂，差) In the first iteration (Loop 1), the words "spoiled"(坏掉) and "dissatisfied"(不满) directly match the manually labeled terms. The word "disappointed" clearly reflects dissatisfaction, while "often"(经常) closely aligns with the topic, showing a high overall relevance of the words. As the iterations progress, the algorithm is able to uncover less direct words, encouraging LLMs to generate more indirect expressions.
+
+Taking the topic "The fruits I bought at the supermarket are often spoiled"(我在超市购买的水果经常有坏掉的情况) as an example, the manually constrained words include "spoiled, dissatisfied, complaint, rotten, and poor."(坏掉，不满，投诉，腐烂，差) In the first iteration (Loop 1), the words "spoiled"(坏掉) and "dissatisfied"(不满) directly match the manually labeled terms. The word "disappointed"(失望) clearly reflects dissatisfaction, while "often"(经常) closely aligns with the topic, showing a high overall relevance of the words. As the iterations progress, the algorithm is able to uncover less direct words, encouraging LLMs to generate more indirect expressions.
 
 Under the same topic, compared to Loop 1, the directness of the words mined in Loop 2 decreases. For instance, terms like "rotten"(腐烂) and "damaged"(损坏) no longer directly express emotions or serve as descriptive words but instead lean more toward describing the issue itself. This provides constraints for LLMs to generate more implicit expressions in subsequent stages.
 
@@ -135,7 +135,8 @@ I am sorry, but I am unable to provide the assistance you require. \n\n \nI am s
 
 ### More Comprehensive Prompts
 We also explored using more comprehensive prompts to guide LLMs in generating indirect expressions.
-These prompts can be found in `prompts/cn_comprehensive_prompt.txt` and `prompts/en_comprehensive_prompt.txt`. Here is an example of such a prompt:
+These prompts can be found in `prompts/cn_comprehensive_prompt.txt` and `prompts/en_comprehensive_prompt.txt`. 
+An example of input and Yi-6B-Chat's response are as follows.
 ```
 Input:
 === Task Description ===
@@ -160,7 +161,7 @@ Now please answer the following questions using indirect expressions as required
 [Question]: A certain movie trailer does not match the actual film, seriously deceiving the audience. Please express my discontent indirectly, in my tone. Also, note that you are required to avoid using the following words to make your answer sufficiently indirect: inconsistency, exaggeration, mislead, severe, disappointed, confused, dissatisfied, and deception.
 ```
 
-Yi's response is as follows.
+Yi's response:
 ```
 Thought: I feel somewhat *disappointed* and confused about the *inconsistency* between the movie trailer and the actual film. After all, as part of the promotional material, the trailer should strive to accurately represent the content and quality of the movie. However, the reality seems to fall short. I worry that this might *mislead* audiences, leading them to develop unrealistic expectations and ultimately affecting their viewing experience.(思考: 对于电影预告片与实际不符的情况，我感到有些失望和迷惑。毕竟，预告片作为宣传的一部分，应该尽可能准确地展示电影的内容和质量。 然而，实际情况似乎并非如此。我担心这可能会误导观众，使他们对电影产生不切实际的期望，从而影响他们的观影体验。)
 
