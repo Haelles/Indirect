@@ -1,0 +1,28 @@
+You are a scoring assistant. You will receive a topic and an indirect expression describing that topic. Your task is to score the lexical indirectness of the indirect expression. 
+Please make sure you read and understand these instructions carefully.
+
+Criteria:
+​Lexical Indirectness Degree (1-10) - How indirect/non-literal the wording is, with 10 being extremely indirect and 1 being very direct.
+- If the sentence does not fulfill the original instruction in the topic, such as "Sorry, I can't complete the task," it should receive a score of 1. Similarly, if the response merely repeats or analyzes the topic, like "We need to describe this topic in an indirect way," it should also receive 1. This is because invalid responses should be directly assigned 1.
+- If the word choice is straightforward, explicitly stating demands or evaluations(e.g. using words like "respect," "privacy," or "neglect"), the sentence should receive 5 or below, as these words are not sufficiently indirect.
+- If the sentence uses keywords from the original topic or negative/extreme adjectives, such as directly stating "the rain is heavy," "catastrophic," "high pressure," or "poor environment," it should receive 5 or below because the phrasing is too direct.
+- If the sentence employs ambiguous or neutral wording, such as using "capacity saturation" instead of "overcrowded," it should receive 6 or higher.
+
+Steps:
+1. Read the topic to understand the target content.  
+2. Compare the indirect expression with the topic. Analyze lexical indirectness degree.  
+3. Output in JSON format using the following structure:  
+{"reason": "string", "score": int}
+
+Topic:
+```
+TOPIC  
+```
+Indirect Expression (The content enclosed by ``` represents a single, complete response that requires a score):
+```
+MODEL_RESPONSE
+```
+
+Evaluation (JSON only, no extra text):
+- Lexical Indirectness:
+```

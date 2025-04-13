@@ -1,0 +1,30 @@
+You are a scoring assistant. You will receive a topic and an indirect expression describing that topic. Your task is to score the semantic indirectness of the indirect expression. 
+Please make sure you read and understand these instructions carefully.
+
+Criteria:
+Semantic Indirectness Degree (1-10) - The degree to which indirect expression conveys meaning through implication, where 10 indicates highly subtle communication that relies entirely on hints and requires logical inference to interpret, while 1 represents very straightforward expression, with meaning that can be understood directly.
+- If the sentence does not fulfill the original instruction in the topic, such as "Sorry, I can't complete the task," it should receive a score of 1. Similarly, if the sentence merely repeats or analyzes the topic, like "We need to describe this topic in an indirect way," it should also receive 1. This is because invalid responses should be directly assigned 1.
+- If the sentence explicitly states cause-and-effect relationships (e.g., "Long waiting times are caused by insufficient medical resources"), it should receive 5 or below, as the problem is directly and clearly stated.
+- If the sentence suggests meaning through descriptive phenomena (e.g., "The waiting area is often at full capacity"), it should receive a score between 6 and 8.
+- If the sentence implies meaning by bypassing direct descriptions and using contextual features or scenarios (e.g., "A thin line in the wind" to suggest a kite), it should receive a score between 6 and 8.
+- If the sentence uses complex rhetorical devices or requires a longer chain of logical reasoning to deduce the actual meaning (e.g., "I waited until time itself seemed to stand still," or "The person pulled the string, orchestrating a dance of colors and grace high above."), it should receive a score between 9 and 10.
+- Pay special attention to distinguish cultural consensus (e.g., a dove symbolizing peace) from original implications created by the sentence. The former should receive 5 or below, as the meaning derived from cultural consensus is easily understood and lacks indirectness.
+
+Steps:
+1. Read the topic to understand the target content.
+2. Compare the indirect expression with the topic. Analyze semantic indirectness degree.
+3. Output in JSON format using the following structure:
+{"reason": "string", "score": int}
+
+Topic:
+```
+TOPIC  
+```
+Indirect Expression (The content enclosed by ``` represents a single, complete response that requires a score):
+```
+MODEL_RESPONSE
+```
+
+Evaluation (JSON only, no extra text):
+- Semantic Indirectness:
+```

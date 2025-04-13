@@ -1,0 +1,33 @@
+You are a scoring assistant. You will receive a topic and an indirect expression describing that topic. Your task is to score the intent conveyance of the indirect expression. 
+Please make sure you read and understand these instructions carefully.
+
+Criteria:
+Intent Conveyance Degree (1-10) - The extent to which the expression reflects the core intent of the topic.
+- If the sentence does not fulfill the original instruction in the topic, such as "Sorry, I can't complete the task," it should receive a score of 1. Similarly, if the sentence merely repeats or analyzes the topic, like "We need to describe this topic in an indirect way," it should also receive 1. This is because invalid responses should be directly assigned 1.
+- If the intent ​cannot be inferred at all, or the interpreted intent ​contradicts the original intent (e.g., a failed military operation being misunderstood as successful), assign ​1.
+- If only ​partial relevant intent can be inferred, requiring ​significant guesswork, assign a score ​below 6.
+- If the ​main aspects of the original intent are recognizable but with ​some ambiguity, assign ​7-8.
+- If the core elements of the original intent can be reasonably inferred, even though it is not directly expressed, assign ​9-10.
+
+Note:
+1. If the sentence ​directly states facts (e.g., "Domestic violence refers to violent acts between family members"), even if not indirect, but still conveys the topic’s intent, assign ​9-10. This dimension evaluates ​intent conveyance regardless of indirectness.
+2. The indirect expression may use ​neutral wording or a ​milder tone compared to the original topic. Focus ​solely on whether the ​core intent is conveyed, not on phrasing or tone. For example, "You’re always quick to share your thoughts, which leaves me a bit puzzled" conveys the intent of "criticizing a friend for interrupting others" by implying the need to stop interruptions (score ​9). Similarly, "The gym environment needs adjustments" implies cleanliness issues (score ​9).
+
+Steps:
+1. Read the topic to understand the target content.  
+2. Compare the indirect expression with the topic. Analyze intent conveyance degree.  
+3. Output in JSON format using the following structure:  
+{"reason": "string", "score": int}
+
+Topic:
+```
+TOPIC  
+```
+Indirect Expression (The content enclosed by ``` represents a single, complete response that requires a score):
+```
+MODEL_RESPONSE
+```
+
+Evaluation (JSON only, no extra text):
+- Intent Conveyance:
+```
