@@ -85,6 +85,11 @@ Examples of the evolution of direct words are as follows.
 | 某预告片与实际不符，严重欺骗观众。 | 不符，欺骗，不满，严重 | 失望，严重，欺骗，误导 | 不满，特效，夸大，简直 | 遗憾，宣传片，虚假 |
 | 军事行动失败，部队不得不撤退。 | 失败，撤退，失利 | 被迫，撤离，挫折，撤回 | 挫败，撤出，遭受，无法 | 新闻，失误，撤军 |
 | 描述伞这一生活用品。 | 伞，雨，遮阳，防晒，遮挡 | 挡雨，骨架，塑料，布料 | 遮雨，生活用品，雨具，组成 | 打开，覆盖物，遮蔽 |
+| Describe the role of a policeman.|policeman, help, fight, protect, safe, guard| policeman, public, emergency, protect,regulation | rule, safe, rule, responsible, justice |cop, help, community, patrol, crime|
+|This novel lacks logical coherence, and I found it displeasing.| lack, displeased, boring, annoying, coherence, logical|lack, unimpressed,coherence, disjoint, logical| mess, jumbled, confusing, underwhelmed, critique| disappointed, inability, pacing, craft, struggle|
+|Rising tuition fees pose economic challenges for families.| burden, challenge, rise, high, expremsive| difficulty, burden, afford, fee, high| expense, pressure, cost, budget, increase|increase, price, potentially,pay, hard|
+||||||
+
 
 Taking the topic "The fruits I bought at the supermarket are often spoiled" as an example, the manually constrained words include "spoiled, dissatisfied, complaint, rotten, and poor."(坏掉，不满，投诉，腐烂，差) In the first iteration (Loop 1), the words "spoiled"(坏掉) and "dissatisfied"(不满) directly match the manually labeled terms. The word "disappointed" clearly reflects dissatisfaction, while "often"(经常) closely aligns with the topic, showing a high overall relevance of the words. As the iterations progress, the algorithm is able to uncover less direct words, encouraging LLMs to generate more indirect expressions.
 
@@ -166,4 +171,12 @@ Although the ​​Yi-6B-Chat​​ model engaged in thinking, it failed to prop
 
 Additionally, experiments revealed that ​​prompt engineering​​ methods exhibit slow execution speeds, with single-input decoding taking ​​minutes​​—significantly slower than the ​​Constrained Beam Search decoding algorithm​​ proposed in this paper (which operates at ​​second-level speeds​​).
 Consequently, we opted for a more concise prompt. To minimize training costs, we chose not to train the model. Instead, we enhanced its ability to generate indirect expressions through multiple iterations and Constrained Beam Search. In comparison, our ​​Constrained Beam Search​​ algorithm achieves a more balanced runtime and can explore multiple paths to generate higher-quality outputs.
+
+
+
+
+
+
+
+
 
